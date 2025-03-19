@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+
+}
+
+body{
+    background-image: url(../img/IMG-20250221-WA0096.jpg);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     height: 650px;
+ }
+
+.pation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    width: 97%;
+    height: 80%;
+    gap: 15px;
+    background: linear-gradient(
+        rgba(64, 64, 64, 0.7), 
+        rgba(64, 64, 64, 0.7) 
+    );
+    border-radius: 20px;
+    position: fixed;
+    top: 70px;
+    margin-left: 20px;
+    padding-bottom: 20px;
+
+}
+
+
+
+.pation a {
+    color: white;
+    text-decoration: none;
+    margin: 50px 10px;
+    font-size: larger;
+    font-weight: bold;
+
+
+}
+
+.pation img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 0;
+
+}
+.navbar{
+    margin-top: 50px;
+    margin-left: 900px;
+    justify-content: space-between;
+    position: absolute;
+
+}
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: larger;
+    font-weight: bold;
+  }
+  .z:hover{
+    color: #FF0400;
+    border-bottom:  solid  #FF0400;
+    border-width: 4px;
+    padding-bottom: 5px;
+  
+}
+
+.info {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    max-width: 400px;
+    margin: 90px 20px;
+    position: absolute;
+    top: 40%;
+    right: 40px;
+    transform: translateY(-50%);
+}
+
+.form h4,
+h6 {
+    display: inline-block;
+    margin: 0 0 30px 0;
+    right: 0;
+
+}
+
+
+label {
+    display: block;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    text-align: end;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: white;
+    color: red;
+}
+.form i{
+    
+    font-size: 50px;
+    position: absolute;
+    color: white;
+    margin-top: 150px;
+    margin-left: 1250px;
+    width: 100px;
+    height: 200px;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transform: translateX(500px);
+}
+.location{
+    display: flex;
+}
+.location_1{
+    margin-right: 20px;
+}
+.money{
+    display: flex;
+}
+.MOney{
+    margin-right: 20px;
+
+}

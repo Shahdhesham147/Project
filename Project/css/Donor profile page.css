@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+  background-image: url(../img/IMG-20250221-WA0096.jpg);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     height: 650px;
+ }
+ .bg{
+    width: 1300px;
+    margin-left: 30px;
+    margin-top: 80px;
+            height: 500px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(
+                rgba(64, 64, 64, 0.7), 
+                rgba(64, 64, 64, 0.7) 
+            );
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.3);
+   
+}
+.navbar{
+    margin-top: 100px;
+    margin-left: 950px;
+    justify-content: space-between;
+    position: absolute;
+
+}
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: larger;
+    font-weight: bold;
+  }
+  .z:hover{
+    color: #FF0400;
+    border-bottom:  solid  #FF0400;
+    border-width: 4px;
+    padding-bottom: 5px;
+   
+
+  
+}
+  img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+margin-top: 40px;
+}
+i{
+    
+    font-size: 50px;
+    position: absolute;
+    color: white;
+    margin-top: 150px;
+    margin-left: 1250px;
+}
+.profile{
+    display: flex;
+   
+    position: absolute;
+}
+.icon{
+    margin-top: 170px;
+    margin-left: 1070px;
+    color: white; 
+}
+.form1{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 930px;
+    
+  }
+  .form2{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 400px;
+  }
+  .profile-form label {
+    margin-bottom: 5px;
+    color: white;
+    padding: 10px;
+
+  }
+  .profile-form input {
+    width: 220px;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background: linear-gradient(
+        rgba(64, 64, 64, 0.7), 
+        rgba(64, 64, 64, 0.7) 
+    );
+   
+  }
+  .x{
+    display: flex;
+  }
+  button{
+    border-color:#FF0400;
+background-color:#FF0400;
+padding: 10px;
+width: 100px;
+border-radius: 20px;
+color: white;
+font-weight: bold;
+margin-top: 500px;
+position: absolute;
+margin-left: 690px;
+
+}
+button:hover{
+    background-color: white;
+    color: #FF0400;
+    border-color: white;
+}
+.btn{
+    margin-right: 200px;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>pation page</title>
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!--style-->
+    <link rel="stylesheet" href="../css/pation.css" />
+</head>
+
+<body class="heading">
+    <div class="pation">
+        <img src="../img/Red and White Modern Blood Donor Illustration Charity  Logo/2.png" alt="Logo">
+        <div class="navbar">
+            <div class="menu">
+                <a href="Home page.html" class="z">الصفحه الرئيسيه</a>
+              <a href="#"class="z" >ارقام التواصل</a>
+              <a href="messages.html"class="z" >الرسائل</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <div class="info">
+        <div class="info-co">
+            <div class="form">
+
+                <h4>المريض</h4>
+                <h6>تسجيل دخول</h6>
+
+                <form>
+
+                    <label for="id"></label>
+                    <input type="text" id="id" name="id" placeholder=": الرقم القومي" />
+
+
+                <div class="location">
+                    
+                    <label for="nearestPlace"></label>
+
+                        <input type="text" class="location_1" placeholder="اقرب مكان" id="nearestPlace">
+                    </select>
+                
+                
+
+                    <label for="location"></label>
+                    <select id="loCc" name="location" class="location_2" >
+
+                        <!-- قائمة الخيارات -->
+                        <option selected disabled>العنوان</option>
+                        <option value="القاهرة">القاهرة</option>
+                        <option value="المنوفية">المنوفية</option>
+                        <option value="القليوبية">القليوبية</option>
+                        <option value="الدقهلية">الدقهلية</option>
+                        <option value="المنصورة">المنصورة</option>
+                        <option value="الأقصر">الأقصر</option>
+                    </select>
+                </div>
+                <div class="money">
+
+                    <label for=""></label>
+                    <input type="text" placeholder="السعر" class="MOney" id="MOney">
+
+                    <label for="quantity"></label>
+                    <select id="quantity" name="quantity">
+
+                        <!-- قائمة الخيارات -->
+                        <option selected disabled>الكميه</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="أكثر">أكثر</option>
+                    </select>
+                </div>
+                <label for=""></label>
+                <input type="text" placeholder="اسباب الاحتياج">
+                </form>
+                <a href="Patient's profile page.html"><button type="submit" id="btn">تسجيل</button></a>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+<script>
+  let btn=document.getElementById('btn');
+  btn.onclick=function(){
+  window.alert('جاري تنفيذ طلبك')
+
+}
+    document.getElementById("quantity").addEventListener("change", function() {
+    const selectedQuantity = this.value; // جلب الكمية المختارة
+    const priceInput = document.getElementById("MOney"); // تحديد حقل السعر
+
+    // تحديد السعر بناءً على الكمية المختارة
+    if (selectedQuantity === "1") {
+        priceInput.value = 50;
+    } else if (selectedQuantity === "2") {
+        priceInput.value = 100;
+    } else if (selectedQuantity === "3") {
+        priceInput.value = 150;
+    } else if (selectedQuantity === "4") {
+        priceInput.value = 200;
+    } else if (selectedQuantity === "5") {
+        priceInput.value = 250;
+    } else if (selectedQuantity === "أكثر") {
+        priceInput.value = "يرجى التواصل لمعرفة السعر";
+    } else {
+        priceInput.value = "غير متوفر";
+    }
+});
+
+
+
+
+document.getElementById("loCc").addEventListener("change", function() {
+    const selectedLocation = this.value; 
+    const nearestPlaceInput = document.getElementById("nearestPlace");       
+
+    let nearestPlace = "غير متوفر"; 
+
+    if (selectedLocation === "القاهرة") {
+        nearestPlace = "مستشفى قصر العيني";
+    } else if (selectedLocation === "المنوفية") {
+        nearestPlace = "مستشفى شبين الكوم";
+    } else if (selectedLocation === "القليوبية") {
+        nearestPlace = "مستشفى بنها التعليمي";
+    } else if (selectedLocation === "الدقهلية") {
+        nearestPlace = "مستشفى الطوارئ بالمنصورة";
+    } else if (selectedLocation === "المنصورة") {
+        nearestPlace = "مستشفى الجامعة";
+    } else if (selectedLocation === "الأقصر") {
+        nearestPlace = "مستشفى الأقصر الدولي";
+    }
+
+    nearestPlaceInput.value = nearestPlace;
+});
+
+
+</script>
+
+
+</body>
+
+</html>
