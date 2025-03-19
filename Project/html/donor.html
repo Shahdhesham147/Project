@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>pation page</title>
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!--style-->
+    <link rel="stylesheet" href="../css/donor.css" />
+</head>
+
+<body>
+    <div class="pation">
+        <img src="../img/Red and White Modern Blood Donor Illustration Charity  Logo/2.png" alt="Logo">
+        <div class="navbar">
+            <div class="menu">
+                <a href="Home page.html" class="z">الصفحه الرئيسيه</a>
+                <a href="" class="z">أرقام التواصل</a>
+                <a href="messages.html"class="z" >الرسائل</a>
+                <a href=""class="z">الهدايا</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="info">
+        <div class="info-co">
+            <div class="form">
+
+                <h4>المتبرع</h4>
+                <h6>تسجيل دخول</h6>
+
+                <form>
+
+                    <label for="id"></label>
+                    <input type="text" id="id" name="id" placeholder=": الرقم القومي" />
+
+                    <div class="location">
+                        <label for=""></label>
+                    <input type="text" placeholder="اقرب مكان" class="location_1">
+                    <label for="location"></label>
+                    <select id="location" name="location" class="location_2">
+
+                        <!-- قائمة الخيارات -->
+                        <option selected disabled> العنوان</option>
+                        <option value="القاهرة">القاهرة</option>
+                        <option value="المنوفية">المنوفية</option>
+                        <option value="القليوبية">القليوبية</option>
+                        <option value="الدقهلية">الدقهلية</option>
+                        <option value="المنصورة">المنصورة</option>
+                        <option value="الأقصر">الأقصر</option>
+                    </select>
+                    
+                    
+                </div>
+
+                    
+                </form>
+                <a href="Donor profile page.html"> <button type="submit"id="btn">تسجيل</button></a>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        let btn=document.getElementById('btn');
+        btn.onclick=function(){
+        window.alert('جاري تنفيذ طلبك')
+        }
+
+        document.getElementById("location").addEventListener("change", function() {
+    const selectedLocation = this.value; // جلب العنوان المختار
+    const nearestPlaceInput = document.querySelector(".location_1"); // تحديد حقل الإدخال
+
+    let nearestPlace = "غير متوفر"; // القيمة الافتراضية
+
+    // تحديد أقرب مكان باستخدام if-else
+    if (selectedLocation === "القاهرة") {
+        nearestPlace = "مستشفى قصر العيني";
+    } else if (selectedLocation === "المنوفية") {
+        nearestPlace = "مستشفى شبين الكوم";
+    } else if (selectedLocation === "القليوبية") {
+        nearestPlace = "مستشفى بنها التعليمي";
+    } else if (selectedLocation === "الدقهلية") {
+        nearestPlace = "مستشفى الطوارئ بالمنصورة";
+    } else if (selectedLocation === "المنصورة") {
+        nearestPlace = "مستشفى الجامعة";
+    } else if (selectedLocation === "الأقصر") {
+        nearestPlace = "مستشفى الأقصر الدولي";
+    }
+
+    // تحديث حقل الإدخال بأقرب مكان
+    nearestPlaceInput.value = nearestPlace;
+});
+
+    </script>
+
+
+
+</body>
+
+</html>

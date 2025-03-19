@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+     background-image: url(../img/IMG-20250221-WA0096.jpg);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     height: 650px;
+ }
+
+img{
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+}
+.password {
+    display: flex;
+    /* تفعيل Flexbox */
+    flex-direction: column;
+    /* ترتيب العناصر عمودياً */
+    justify-content: center;
+    /* توسيط العناصر عموديًا */
+    align-items: center;
+    /* توسيط العناصر أفقيًا */
+    width: 97%;
+    /*عرض الشاشة */
+    height: 80%;
+    /* طول الشاشة */
+    gap: 20px;
+    /* مسافة بين العناصر */
+    background: linear-gradient(
+                rgba(64, 64, 64, 0.7), 
+                rgba(64, 64, 64, 0.7) 
+            );
+    /* خلفية شفافة (أسود شفاف) */
+    border-radius: 20px;
+    /* زوايا دائرية */
+    position: fixed;
+    /*لتحديد موقع العنصر*/
+    top: 70px;
+    /*مسافة من فوق*/
+    margin-left: 20px;
+    /*مسافة م ناحية الشمال*/
+    padding-bottom: 20px;
+
+
+}
+
+.password p {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-right: 12px;
+    font-weight: bolder;
+    font-size: large;
+
+}
+
+.password input {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid red;
+    border-radius: 10px;
+    width: 20%;
+    height: 40px;
+    padding: 0 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: end;
+
+}
+
+.password a {
+    width: 200px;
+    height: 35px;
+    border: 1px solid red;
+    border-radius: 10px;
+    margin-top: 30px;
+    background-color: red;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    text-align: center;
+
+
+}
+.password button
+{
+    background-color: red;
+    width: 200px;
+    height: 35px;
+    border: 1px solid red;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    
+}
